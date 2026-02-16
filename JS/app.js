@@ -1,21 +1,30 @@
-function login() {
-  const user = document.getElementById("user").value.trim();
-  const pass = document.getElementById("pass").value.trim();
-  const error = document.getElementById("error");
+function vaciar(text1, text2){
+    text1.value = "";
+    text2.value = "";
+}
 
-  // Simulación de usuarios
-  const admin = { user: "admin", pass: "1234" };
-  const atUser = { user: "atencion", pass: "1234" };
+function login(){
+    let userAdmin = ["admin", "admin123"]
+    let userAtUsuario = ["atusuario", "atusuario123"]
+    let user = document.getElementById('user');
+    let pass = document.getElementById('pass');
+    
+    //ADMIN
+    if (user.value === userAdmin[0] && pass.value === userAdmin[1]){
+        //console.log("entro como admin");
+        vaciar(user, pass);
+        window.location.href = "sistemaRegistro.html";
 
-  if (user === admin.user && pass === admin.pass) {
-    window.location.href = "panel_admin.html";
-    return;
-  }
-
-  if (user === atUser.user && pass === atUser.pass) {
-    window.location.href = "panel_atencion.html";
-    return;
-  }
-
-  error.textContent = "Usuario o contraseña incorrectos.";
+    //EMPLEADO
+    } else if (user.value === userAtUsuario[0] && pass.value === userAtUsuario[1]){
+        console.log("entro como empleado");
+        vaciar(user, pass);
+        //window.location.href = "sistemaExpedientes.html";
+    
+    //MAL LA CONTRASEÑA
+    } else {
+        alert("Credenciales de ingreso incorrectas, intentelo de nuevo por favor");
+        vaciar(user, pass);
+    }
+    
 }

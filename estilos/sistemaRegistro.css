@@ -1,0 +1,75 @@
+/* PALETA DE COLORES */
+:root {
+    --color-verde-oscuro: #3D7363;
+    --color-verde-medio: #518C7C;
+    --color-verde-claro: #81A69B;
+    --color-gris: #A4A5A6;
+    --color-claro: #F2F2F2;
+    --color-naranja: #F2994B;
+    --color-blanco: #ffffff;
+    --color-negro: #000000;
+}
+
+/* CONTENEDORES */
+.body-sistema{
+    background: none !important;
+    align-items: stretch !important;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.main-box{
+    flex-basis: 50%;
+}
+
+.left-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin: auto auto auto 3rem;
+}
+
+.right-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.item-container{
+    display: flex;
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+}
+
+article div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* MARGENES */
+article div h2{margin: 0 5rem 1rem 0;}
+article div p{margin: 0 4rem 0 0;}
+.margin-middle{margin: 0.1rem 0;}
+.margin-extrem1{margin: 0 0 0.1rem 0;}
+.margin-extrem4{margin: 0.1rem 0 0 0;}
+.number-item{margin: 0 1rem 0 4rem;}
+
+
+.circle{
+    width: 80px;
+    height: 80px;
+    border: 2px solid var(--color-claro);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
