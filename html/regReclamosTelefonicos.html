@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../estilos/base.css"/>
     <link rel="stylesheet" href="../estilos/index.css"/>
     <link rel="stylesheet" href="../estilos/sistemaRegistro.css">
+    <link rel="stylesheet" href="../estilos/registroReclamos.css">
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap" rel="stylesheet">
     
 </head>
@@ -21,12 +22,12 @@
         <section class="left-container main-box">
             <div>
                 <img src="../assets/epre-grande.png" alt="Logo EPRE" style="height: 60px;">
+            </div>                
+            <div>
+                <svg class="icon-big" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.49 2 2 6.49 2 12v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-5c0-.55-.45-1-1-1H4.07C4.56 7.06 7.93 4 12 4s7.44 3.06 7.93 7H18c-.55 0-1 .45-1 1v5c0 .55.45 1 1 1h2v1c0 .55-.45 1-1 1h-4c0-.55-.45-1-1-1h-4c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1h9c1.65 0 3-1.35 3-3v-7c0-5.51-4.49-10-10-10"></path></svg>
+                <h1 class="text-verde-oscuro">Registro de Reclamos Telefónicos</h1>
             </div>
             <div>
-                <h1 class="text-verde-oscuro">Sistema de Registro de Expedientes</h1>
-            </div>
-            <div>
-                <p id="user-ms" class="user-ms text-gris comment"></p>
                 <a class="no-link text-verde-medio comment" onclick="verificarSalida()">Cerrar sesión</a>
             </div>
 
@@ -36,12 +37,11 @@
         <section class="right-container main-box">
 
             <!-- ITEM 1 -->
-            <a class="no-link item-container margin-extrem1" href="registroReclamos.html">
+            <a class="no-link item-container margin-extrem1" href="enProceso.html">
                 <article class="bg-verde-oscuro">
-                    <div class="number-item"><h1 class="text-claro circle">1</h1></div>
-                    <div>
-                        <h2 class="text-claro">Registro de Reclamos</h2>
-                        <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ducimus vitae sequi pariatur porro possimus voluptatem assumenda.</p>
+                    <div class="item">
+                        <h2>Nuevo Reclamo</h2>
+                        <p class="p1">En esta sección se pueden cargar los Reclamos Telefónicos ingresados a E.P.R.E. Desde la misma sección se cargan los reclamos y se pueden enviar a la Distribuidora.</p>
                     </div>
                 </article>
             </a>
@@ -49,10 +49,9 @@
             <!-- ITEM 2 -->
             <a class="no-link item-container margin-middle" href="enProceso.html">
                 <article class="bg-verde-oscuro">
-                    <div class="number-item"><h1 class="text-claro circle">2</h1></div>
-                    <div>
-                        <h2 class="text-claro">Registro de Notas y Resoluciones</h2>
-                        <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ducimus vitae sequi pariatur porro possimus voluptatem assumenda.</p>
+                    <div class="item">
+                        <h2>Envío Reclamo</h2>
+                        <p class="p1">En esta sección se pueden enviar los reclamos telefonicos Ingresados al E.P.R.E a la Distribuidora. Éstos deben estar <i> previamente cargados en el sistema.</i></p>
                     </div>
                 </article>
             </a>
@@ -60,10 +59,9 @@
             <!-- ITEM 3 -->
             <a class="no-link item-container margin-middle" href="enProceso.html">
                 <article class="bg-verde-oscuro">
-                    <div class="number-item"><h1 class="text-claro circle">3</h1></div>
-                    <div>
-                        <h2 class="text-claro">Sistema de Expedientes</h2>
-                        <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ducimus vitae sequi pariatur porro possimus voluptatem assumenda.</p>
+                    <div class="item">
+                        <h2>Respuesta a Reclamo</h2>
+                        <p class="p1">En esta sección se pueden cargar las respuestas a los Reclamos Telefónicos. Tanto las respuestas de las Distribuidoras como las novedades obtenidas en comunicación con los Usuarios.</p>
                     </div>
                 </article>
             </a>
@@ -71,10 +69,9 @@
             <!-- ITEM 4 -->
             <a class="no-link item-container margin-extrem4" href="enProceso.html">
                 <article class="bg-verde-oscuro">
-                    <div class="number-item"><h1 class="text-claro circle">4</h1></div>
-                    <div>
-                        <h2 class="text-claro">Configuración</h2>
-                        <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ducimus vitae sequi pariatur porro possimus voluptatem assumenda.</p>
+                    <div class="item">
+                        <h2>Buscar Reclamo</h2>
+                        <p class="p1">En esta sección se pueden buscar los Reclamos Telefónicos ingresados. Se pueden aplicar hasta 2 (dos)criterios de búsqueda y verificar las respuestas cargadas para cada uno.</p>
                     </div>
                 </article>
             </a>

@@ -1,0 +1,32 @@
+.circle{
+    width: 70px !important;
+    height: 70px !important;
+    border: 2px solid var(--color-blanco) !important;
+    margin-left: -1rem;
+    margin-right: 1rem;
+}
+
+.border-ext-sup{
+    border-bottom: 2px solid var(--color-verde-medio);
+}
+
+article div h4{margin: 0 5rem 1rem 0;}
+article div p{margin: 0 4rem 0 0;}
+
+.icon{
+    fill: var(--color-verde-oscuro);
+    width: 36px;
+    height: auto;
+}
+
+.icon-big{
+    fill: var(--color-verde-oscuro);
+    width: 85px;
+    height: auto;
+}
+
+.no-link:hover{
+    cursor: pointer;
+}
+
+h1{margin-block-start: 0px;}

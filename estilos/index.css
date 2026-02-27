@@ -1,63 +1,17 @@
-/* PALETA DE COLORES */
-:root {
-    --color-verde-oscuro: #3D7363;
-    --color-verde-medio: #518C7C;
-    --color-verde-claro: #81A69B;
-    --color-gris: #A4A5A6;
-    --color-claro: #F2F2F2;
-    --color-naranja: #F2994B;
-    --color-blanco: #ffffff;
-    --color-negro: #000000;
-}
-
-/* Colores de texto */
-.text-verde-oscuro { color: var(--color-verde-oscuro); }
-.text-verde-medio  { color: var(--color-verde-medio); }
-.text-verde-claro  { color: var(--color-verde-claro); }
-.text-gris         { color: var(--color-gris); }
-.text-claro        { color: var(--color-claro); }
-.text-naranja      { color: var(--color-naranja); }
-.text-blanco       { color: var(--color-blanco); }
-.text-negro        { color: var(--color-negro); }
-
-/* Colores de fondo */
-.bg-verde-oscuro { background-color: var(--color-verde-oscuro); }
-.bg-verde-medio  { background-color: var(--color-verde-medio); }
-.bg-naranja      { background-color: var(--color-naranja); }
-.bg-claro        { background-color: var(--color-claro); }
-.bg-blanco       { background-color: var(--color-blanco); }
-
-
-/*  TEXTO  */
-h1{font-size: 48px; font-weight: 800;}
-h2{font-size: 32px; font-weight: 700; color: var(--color-claro);}
-h3{font-size: 32px; font-weight: 600; color: var(--color-verde-oscuro);}
-h4{font-size: 24px; font-weight: 400;}
-h5{font-size: 16px; font-weight: 500;}
-
-.p1{font-size: 17px; font-weight: 400; color: var(--color-claro);}
-.p2{font-size: 15px; font-weight: 300; color: var(--color-verde-oscuro);}
-.p-bt{font-size: 15px; font-weight: 800; letter-spacing: 10%;}
-
-.comment{font-size: 12px; font-weight: 400; color: var(--color-gris);}
-.no-link{text-decoration: none;}
-
-.prueba{
-    margin: 40px 0px 0px 20px;
-    color: var(--color-verde-oscuro);
-}
-
 /* CONTENEDORES - FOMULARIO */
-body{
+.body-mg{
     margin: 0;
     min-height: 100vh;
     display: flex;
     justify-content: center;  
     align-items: center;
+    font-family: "Encode Sans", sans-serif;
+}
+
+.body-bg{
     background-image: url("../assets/Tapa-frente.png");
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: "Encode Sans", sans-serif;
 }
 
 .login-container{
@@ -65,7 +19,7 @@ body{
     min-height: 750px;
     box-shadow: 2px 2px 19.4px 3px rgba(0, 0, 0, 0.20);
     border-radius: 14px;
-    background-color: #FFFFFF;
+    background-color: var(--color-blanco);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,8 +68,10 @@ body{
   font-size: 12px;
 }
 
+.user-ms{margin-bottom: 0px;}
+
 /* IMAGENES */
-.logo-color{max-width: 200px;}
+.logo-color{max-width: 175px;}
 
 /* BOTONES */
 .primary-bt{
@@ -136,14 +92,17 @@ body{
     border-width: 0px;
 }
 
-
-
-
+/* ERROR */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
 
 
 /* TABLET */
-@media only screen and (min-width: 768px){
-    .login-background{
+@media (min-width: 768px){
+    .body-bg-ms{
     background-image: url("../assets/Tablet.png");
     }
 
@@ -155,12 +114,26 @@ body{
 
     .coment{font-size: 12px;}
 
-    .login-container{max-width: 541px;}
+    .login-container{
+        max-width: 541px;
+        max-height: 600px;
+    }
 }
 
-/* PC */
-@media only screen and (min-width: 1024px){
-    .login-background{
-        background-image: url("../assets/Tapa-frente.png");
-    }   
+/* NOTEBOOK */
+@media (max-width: 1400px){
+  
+    h1{font-size: 48px;}
+    h2{font-size: 32px;}
+    h3{font-size: 32px;}
+    h4{font-size: 24px;}
+    h5{font-size: 16px;}
+
+    .coment{font-size: 12px;}
+
+    .login-container{
+        min-width: 500px;
+        min-height: 650px;
+        transform: scale(0.85);
+    }
 }

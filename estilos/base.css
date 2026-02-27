@@ -1,0 +1,37 @@
+/* PALETA DE COLORES */
+:root {
+    --color-verde-oscuro: #3D7363;
+    --color-verde-medio: #518C7C;
+    --color-verde-claro: #81A69B;
+    --color-gris: #A4A5A6;
+    --color-claro: #F2F2F2;
+    --color-naranja: #F2994B;
+    --color-blanco: #ffffff;
+    --color-negro: #000000;
+}
+
+/* Colores de texto */
+.text-verde-oscuro { color: var(--color-verde-oscuro); }
+.text-verde-medio  { color: var(--color-verde-medio); }
+
+.text-gris         { color: var(--color-gris); }
+.text-claro        { color: var(--color-claro); }
+
+/* Colores de fondo */
+.bg-verde-oscuro { background-color: var(--color-verde-oscuro); }
+.bg-claro        { background-color: var(--color-claro); }
+
+
+/*  TEXTO  */
+h1{font-size: 48px; font-weight: 800;}
+h2{font-size: 32px; font-weight: 700;}
+h3{font-size: 32px; font-weight: 600; color: var(--color-verde-oscuro);}
+h4{font-size: 24px; font-weight: 600; color: var(--color-verde-oscuro);}
+h5{font-size: 16px; font-weight: 500;}
+
+.p1{font-size: 17px; font-weight: 400; color: var(--color-claro);}
+.p2{font-size: 15px; font-weight: 300; color: var(--color-verde-oscuro);}
+.p-bt{font-size: 15px; font-weight: 700; letter-spacing: 10%;}
+
+.comment{font-size: 12px; font-weight: 400;}
+.no-link{text-decoration: none;}
